@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b72be65822.js" crossorigin="anonymous"></script>
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Inmobiliaria</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <a class="navbar-brand" href="#">Inmobiliaria</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item text-center">
+                    <a class="nav-link font-weight-bold" href="#" type="button" data-toggle="modal"
+                        data-target="#modal"><i class="far fa-user font-weight-bold"></i>&nbsp;Ingresar</a>
+                </li>
+                <li class="nav-item d-inline d-md-none text-center">
+                    <a href="#" class="icon-link font-weight-bold nav-link"><i
+                            class="fab fa-facebook-f"></i>&nbsp;Facebook</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase font-weight-bold" id="exampleModalLabel">Ingresa tu cuenta
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+                        perspiciatis.</p>
+                    <form action="ventas.html" class="py-4">
+                        <div class="form-group">
+                            <label for="email">Correo</label>
+                            <input type="email" class="form-control" id="email"> <!--required-->
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Contrase&ntilde;a</label>
+                            <input type="password" class="form-control" id="pass"> <!--required-->
+                        </div>
+                        <input type="submit" value="Entrar"
+                            class="btn btn-secondary d-block mx-auto py-2 px-4 rounded-0">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="d-block mx-auto">¿A&uacute;n no est&aacute; registrado?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion Buscador -->
+    <section class="buscador py-custom">
+        <div class="container px-2 px-sm-4 px-md-5 contenedor-busqueda">
+            <h2 class="text-center font-weight-bold pt-5">Buscador</h2>
+            <ul class="nav nav-pills nav-fill my-5" role="tablist">
+                <li class="nav-item">
+                    <a href="#comprar" class="nav-link active" data-toggle="pill">Comprar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#alquilar" class="nav-link" data-toggle="pill">Alquilar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#vender" class="nav-link" data-toggle="pill">Vender</a>
+                </li>
+            </ul>
+            <div class="tab-content pb-5">
+                <div class="tab-pane show active" id="comprar" role="tabpanel">
+                    <div class="contenedor-input input-group">
+                        <div class="col-12 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <select class="form-control">
+                                        <option value="casa">Casa</option>
+                                        <option value="depa">Departamento</option>
+                                        <option value="oficina">Oficina</option>
+                                        <option value="lote">Lote</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="form-control pl-1 pl-md-2 border-0 rounded-right"
+                                    id="inlineFormInputGroupUsername" placeholder="Ingresar ubicaci&oacute;n">
+                            </div>
+                            <input type="submit" class="btn btn-x" value="Buscar">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="alquilar" role="tabpanel">
+                    <div class="contenedor-input input-group">
+                        <div class="col-12 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <select class="form-control rounded-0">
+                                        <option value="casa">Casa</option>
+                                        <option value="depa">Departamento</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="form-control pl-1 pl-md-2 border-0 rounded-0"
+                                    id="inlineFormInputGroupUsername" placeholder="Ingresar ubicaci&oacute;n">
+                            </div>
+                            <input type="submit" class="btn btn-x" value="Buscar">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="vender" role="tabpanel">
+                    <div class="contenedor-input input-group">
+                        <div class="col-12 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <select class="form-control">
+                                        <option value="casa">Casa</option>
+                                        <option value="depa">Departamento</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="form-control pl-1 pl-md-2 border-0 rounded-right"
+                                    id="inlineFormInputGroupUsername" placeholder="Ingresar ubicaci&oacute;n">
+                            </div>
+                            <input type="submit" class="btn btn-x" value="Buscar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuerpo Principal -->
+    <section class="main" id="main">
+        <!-- Contenedor de Informacion -->
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-6 order-2 order-md-1 img-cont">
+                    <img src="img/img-busqueda-casa.svg" alt="Busquedas Rapidas" class="hov-img img-fluid d-block mx-auto w-75">
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2 d-flex">
+                    <div class="align-self-center">
+                        <h2 class="text-center subtitle-1">Lorem ipsum dolor sit.</h2>
+                        <p class="text-justify pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                            suscipit
+                            laudantium itaque quibusdam ab quasi eaque sint, repellat repudiandae aliquam saepe facere?
+                            Quibusdam minima commodi delectus, veniam neque libero vitae. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nihil, consequatur!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <h2 class="text-center subtitle-1">Lorem ipsum dolor sit.</h2>
+                        <p class="text-justify pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                            suscipit
+                            laudantium itaque quibusdam ab quasi eaque sint, repellat repudiandae aliquam saepe facere?
+                            Quibusdam minima commodi delectus, veniam neque libero vitae. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nihil, consequatur!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 img-cont">
+                    <img src="img/img-select-casa.svg" alt="Seleccion de Domicilios"
+                        class="hov-img img-fluid d-block mx-auto w-75">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de Tarjetas -->
+        <div class="contenedor-tarjetas my-5">
+            <div class="container py-custom-2">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card py-4 mx-auto">
+                            <img class="pb-5 w-50 d-block mx-auto card-img-top"
+                                src="img/card/casas-exclusivas_card.svg"
+                                alt="Disponibilidad del Servicio en varios paises">
+                            <div class="card-body border-top">
+                                <h5 class="text-center font-weight-bold card-title">Servicio en varios Paises</h5>
+                                <p class="text-justify my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium porro ab
+                                    voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card py-4 mx-auto">
+                            <img class="pb-5 w-50 d-block mx-auto card-img-top"
+                                src="img/card/conectividad-mundial_card.svg"
+                                alt="Disponibilidad del Servicio en varios paises">
+                            <div class="card-body border-top">
+                                <h5 class="text-center font-weight-bold card-title">Servicio en varios Paises</h5>
+                                <p class="text-justify my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium porro ab
+                                    voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card py-4 mx-auto mt-2 mt-md-5 mt-lg-0">
+                            <img class="pb-5 imx d-block mx-auto card-img-top" src="img/card/multiplataforma_card.svg"
+                                alt="Servicio multiplataforma con diseño responsivo">
+                            <div class="card-body border-top">
+                                <h5 class="text-center font-weight-bold card-title">Servicio Multiplataforma</h5>
+                                <p class="text-justify my-4">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                    Laudantium porro ab
+                                    voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio de Contacto -->
+        <div class="formulario position-relative" id="formulario">
+            <div class="px-custom py-0 py-md-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 edit-form">
+                            <form action="" class="w-100">
+                                <h2 class="display-5 display-md-4">Cont&aacute;ctanos</h2>
+                                <p class="mb-5 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Nobis, vel.
+                                </p>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="nombre" name="nombre" required>
+                                    <label for="nombre">Nombre</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" id="email" name="email" required>
+                                    <label for="email">Correo Electronico</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="mensaje" id="mensaje" required></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
+                                <input type="submit" value="Enviar" class="btn btn-secondary mt-4">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="#"><h2>Inmobiliaria</h2></a>
+                    <p>&copy;&nbsp;Todos los Derechos Reservados</p>
+                    <div class="mt-2 d-block redes">
+                        <a href="#" class="mr-2"><i class="fas fa-globe-africa"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
